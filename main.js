@@ -2,6 +2,7 @@
 const profileData = {
     name: "Awwal Oladimeji",
     email: "awwaloladimeji@yahoo.com",
+    phone: "08138334954",
     githubUrl: "https://github.com/adroitguy22",
     aboutText: "Passionate web developer and AI automation specialist with expertise in building modern web applications and implementing intelligent automation solutions. Dedicated to creating efficient, scalable, and user-friendly digital experiences.",
     skills: [
@@ -26,6 +27,8 @@ function initializeProfile() {
     githubLink.href = profileData.githubUrl;
     const emailLink = document.getElementById("email-link");
     emailLink.href = `mailto:${profileData.email}`;
+    const phoneLink = document.getElementById("phone-link");
+    phoneLink.href = `tel:${profileData.phone}`;
     const skillsContainer = document.getElementById("skills-container");
     profileData.skills.forEach(skill => {
         const skillCard = document.createElement("div");
