@@ -8,8 +8,8 @@ const profileData = {
     email: "awwaloladimeji@yahoo.com",
     phone: "+234 813 833 4954",
     githubUrl: "https://github.com/adroitguy22",
-    heroDescription: "Results-driven professional with 10+ years of experience in sales and customer engagement. Open to remote work opportunities, specializing in managing remote learning for international groups using self-developed web applications.",
-    aboutText: "Results-driven professional with 10+ years of experience in sales and customer engagement. Expert in managing multi-channel communication (Phone, Email, Live Chat) and high-volume interactions. Recently specialized in managing remote learning for international groups in the UK using self-developed web applications to optimize user experience. Currently open to remote work opportunities worldwide.",
+    heroDescription: "Results-driven professional with 10+ years of experience in managerial, teaching, sales, and customer engagement. An enthusiastic Web Developer and AI Automation Specialist. Currently open to remote work opportunities worldwide.",
+    aboutText: "Results-driven professional with 10+ years of experience in managerial, teaching, sales, and customer engagement. An enthusiastic Web Developer and AI Automation Specialist. Currently open to remote work opportunities worldwide.",
     typedStrings: [
         "Remote Customer Support.",
         "Technical Engagement.",
