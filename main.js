@@ -98,6 +98,7 @@ const profileData = {
             description: "An app built to enhance the reading speed of intermediate Qur'an learners.",
             tags: ["Qur'an", "Learning", "Flashcards"],
             emoji: "📖",
+            image: "assets/quran-flashcard.webp",
             github: "https://github.com/adroitguy22/Qur-an-Flashcard",
             live: "https://qura-an-flashcard.onrender.com/"
         },
@@ -106,6 +107,7 @@ const profileData = {
             description: "An app built to teach an English speaking Quran reading from basic to expert.",
             tags: ["Arabic", "Education", "Language"],
             emoji: "✍️",
+            image: "assets/arabic-reading-2.webp",
             github: "https://github.com/adroitguy22/Read-Arabic-with-Ease",
             live: "https://read-arabic-with-ease.vercel.app/"
         },
@@ -114,6 +116,7 @@ const profileData = {
             description: "An app built to improve students academic weaknesses in various subjects by the teachers with parents access to their child's portfolio and progress and an oversight function by the school management.",
             tags: ["School Management", "Education", "Portal"],
             emoji: "🏫",
+            image: "assets/imam-malik.webp",
             github: "https://github.com/adroitguy22/Imam-Malik_Academy-Nigeria",
             live: "https://www.imammalik.com.ng/"
         }
@@ -293,9 +296,14 @@ function populateProjects() {
     profileData.projects.forEach((proj, i) => {
         const card = document.createElement('div');
         card.className = `project-card glass-card reveal reveal-delay-${Math.min(i + 1, 4)}`;
+        
+        const imageContent = proj.image 
+            ? `<img src="${proj.image}" alt="${proj.title}" loading="lazy">`
+            : `<div class="project-image-placeholder">${proj.emoji}</div>`;
+
         card.innerHTML = `
             <div class="project-image">
-                <div class="project-image-placeholder">${proj.emoji}</div>
+                ${imageContent}
             </div>
             <div class="project-info">
                 <h3 class="project-title">${proj.title}</h3>
